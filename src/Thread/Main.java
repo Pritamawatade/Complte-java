@@ -6,7 +6,7 @@ public class Main {
 
 
 
-        System.out.println("main is thread is staring....");
+        System.out.println("main is thread is staring.....");
         Thread thread1 = new Thread1("thread 1 ");
        thread1.setDaemon(false); // In summary, the key difference between threads and daemon threads is that non-daemon threads are
 //        terminated only when they finish their tasks, while daemon threads are terminated when the main program exits, regardless

@@ -7,22 +7,8 @@ import java.util.Scanner;
 
 public class Audio {
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-        Scanner scanner = new Scanner(System.in);
 
-        // Print the current working directory
-        System.out.println("Current working directory: " + new File(".").getAbsolutePath());
 
-        // Print all files in the current directory for verification
-        File currentDir = new File(".");
-        File[] filesList = currentDir.listFiles();
-        System.out.println("Files in current directory:");
-        if (filesList != null) {
-            for (File f : filesList) {
-                System.out.println(f.getName());
-            }
-        }
-
-        // Define the file path
         String filePath = "D:\\java\\first_code\\src\\audio\\pirate_king.wav";
 
         // Check if the file exists
@@ -42,7 +28,8 @@ public class Audio {
         clip.open(audioStream);
 
         clip.start();
-        String response = scanner.next();
+        String response = new Scanner(System.in).next();
+
     }
 }
 

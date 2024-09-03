@@ -1,11 +1,11 @@
-package Thread;
+package Threading;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class Producer_Consumer_problem {
-    private Queue<Integer> q;
-    private int capacity;
+    private final Queue<Integer> q;
+    private final int capacity;
 
     public Producer_Consumer_problem(int cap) {
         q = new LinkedList<>();
@@ -29,9 +29,9 @@ public class Producer_Consumer_problem {
         }
     }
 
-    public int reomve() {
+    public int remove() {
         synchronized (q) {
-            while (q.size() == 0) {
+            while (q.isEmpty()) {
                 try {
                     q.wait();
                 } catch (InterruptedException e) {

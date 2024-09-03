@@ -1,16 +1,17 @@
-package Thread;
+package Threading;
 
 public class Main {
     public static void main(String[] args) {
 
+        CreateThreadByRunnable runnableThread = new CreateThreadByRunnable();
+        runnableThread.run();
 
 
-
-        System.out.println("main is thread is staring.....");
+        System.out.println("main is thread is staring......");
         Thread thread1 = new Thread1("thread 1 ");
-       thread1.setDaemon(false); // In summary, the key difference between threads and daemon threads is that non-daemon threads are
-//        terminated only when they finish their tasks, while daemon threads are terminated when the main program exits, regardless
-//        of whether they have finished their tasks or not.
+        thread1.setDaemon(false); // In summary, the key difference between threads and daemon threads is that non-daemon threads are
+//                                  terminated only when they finish their tasks, while daemon threads are terminated when the main program exits, regardless
+//                                   of whether they have finished their tasks or not.
         thread1.start();
 
         Thread thread2 = new Thread(new Thread2(), "Thread 2"); // second paramter is optional it's name of the thread
@@ -18,10 +19,9 @@ public class Main {
         System.out.println("main thread is dying............");
         Producer_Consumer_problem p = new Producer_Consumer_problem(3);
         p.add(12);
-        p.reomve();
-        p.reomve();
+        p.remove();
+        p.remove();
     }
-
 
 }
 
@@ -43,3 +43,11 @@ public class Main {
 // or extending the Thread class and calling the run method. if by doing it by implement runnable
 // interface you have to pass the object of the
 // runnable interface to the  Thread class
+
+
+// LIFE CYCLE OF THREAD  :
+//                      In java thread always exist in the following state :
+//                      1> new 2>active 3> Blocked / waiting 4> Timed waiting 5> Terminated
+//
+//
+//

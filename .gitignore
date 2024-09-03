@@ -27,3 +27,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+.idea/
+/src/Human.class
+/src/audio/Audio.class
+/src/oops/Animal.class
+/src/oops/Main.class

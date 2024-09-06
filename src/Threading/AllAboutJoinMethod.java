@@ -23,7 +23,7 @@ public class AllAboutJoinMethod extends Thread{
 
 
         try {
-            t1.join();
+            t1.join(); // it means
         } catch (InterruptedException e) {
             System.out.println("Main thread interrupted because of InterruptedException ");
         }

@@ -8,7 +8,7 @@ public class FileWriterC{
         try
         {
 
-            FileWriter writer = new FileWriter("D:\\java\\first_code\\src\\Filehandling\\quotes.txt");
+            FileWriter writer = new FileWriter("D:\\java\\first_code\\src\\Filehandling\\quotes1.txt");
             writer.write("As long as I am alive there are infinite possibilities\n");
             writer.append(" i a, gonna be the king of the pirates");
             writer.append(" I am going to be world's greatest swordsman");

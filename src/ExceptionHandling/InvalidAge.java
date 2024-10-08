@@ -16,7 +16,7 @@ class TestException {
 
     public static void main(String[] args) {
         try{
-            invalidAge(14);
+            invalidAge(19);
             System.out.println("You are eligible to vote");
         }
         catch(InvalidAgeException e){

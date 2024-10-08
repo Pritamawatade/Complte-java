@@ -27,7 +27,7 @@ public class CustomException {
         try{
             username = sc.nextLine();
             pass = sc.nextInt();
-            if (pass < 6)
+            if (String.valueOf(pass).length() < 6)
                 throw new GreaterThanSixException("Please enter value more that 6");
 
             if (Objects.equals(username, "null")){

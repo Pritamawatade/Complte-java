@@ -49,5 +49,3 @@ public class Main {
 //                      In java thread always exist in the following state :
 //                      1> new 2>active 3> Blocked / waiting 4> Timed waiting 5> Terminated
 //
-//
-//

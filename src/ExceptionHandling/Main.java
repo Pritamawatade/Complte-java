@@ -13,7 +13,7 @@ public class Main {
         System.out.println("this is the example of the null pointer exception");
     // example of null pointer exception
         try{
-            s.toLowerCase();
+        s.toLowerCase();
 
         }
         catch (NullPointerException e){
@@ -58,11 +58,11 @@ public class Main {
 
 // Types of Exception : 1> checked :- one which we developer write the code to check handle
 //                        2> unchecked : These are the runtime exception which are checked by the JVM
-//                      3> Error :- The error can happen becouse of the some external reason.
+//                      3> Error :- The error can happen because of the some external reason.
 
 // Types of runtime exception :
 //          1> NullPointerException : -When the value is null.
 //          2> ArithmeticException :- When there is arithmetic mismatch
-//          3>IllegalArugumenException :- As the name suggest
-//          4>IndexOutOfBoundsExcception :- When there is more value than the size of the element
+//          3>IllegalArgumentException :- As the name suggest
+//          4>IndexOutOfBoundsException :- When there is more value than the size of the element
 //          5> IllegalStateOperation :- When the underline object is not in the correct state.
